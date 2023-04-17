@@ -43,8 +43,7 @@ if (NODE_ENV !== 'test') {
 	});
 }
 
-if (ENGINE_DB === 'nosql') dbConnectNosql();
-else dbConnectMysql();
+ENGINE_DB === 'nosql' ? dbConnectNosql() : dbConnectMysql();
 
 /**
  * para fines de testing se exporta
